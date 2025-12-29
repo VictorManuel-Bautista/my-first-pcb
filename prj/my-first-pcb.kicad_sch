@@ -1,0 +1,490 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "85026044-e848-43ba-9b62-4d5d8c169d04")
+	(paper "A4")
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 137.16 110.49) (xy 104.14 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "039d54e2-fa86-4b10-b48d-f675419e85a4")
+	)
+	(wire
+		(pts
+			(xy 129.54 102.87) (xy 129.54 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d1ddd87-d840-432e-927f-24a946135fc6")
+	)
+	(wire
+		(pts
+			(xy 133.35 83.82) (xy 154.94 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11723ff5-d0d9-4454-a1bb-1c790a6326e2")
+	)
+	(wire
+		(pts
+			(xy 104.14 100.33) (xy 125.73 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23b429e4-c404-4bae-b26e-5b0ec36afe4a")
+	)
+	(wire
+		(pts
+			(xy 147.32 73.66) (xy 154.94 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "381f9a31-6cce-4a0c-9186-8b990e5a3cb2")
+	)
+	(wire
+		(pts
+			(xy 123.19 76.2) (xy 154.94 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d17b0dd-da44-4963-a803-63364a90084f")
+	)
+	(bus
+		(pts
+			(xy 137.16 87.63) (xy 137.16 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43de64b3-88ef-42e6-be26-bb42ccdd7569")
+	)
+	(wire
+		(pts
+			(xy 125.73 100.33) (xy 125.73 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53fd05b3-efe2-4f15-a4bb-a0f68f304df4")
+	)
+	(wire
+		(pts
+			(xy 147.32 64.77) (xy 147.32 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a422d87-4e4d-4e02-97e0-7b75d4fe10ee")
+	)
+	(wire
+		(pts
+			(xy 153.67 92.71) (xy 154.94 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f297c99-7079-4e7e-a77c-82e52fb94c41")
+	)
+	(bus
+		(pts
+			(xy 154.94 87.63) (xy 137.16 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71a6755c-02b7-4051-8711-5ffc8d9a8bb0")
+	)
+	(wire
+		(pts
+			(xy 104.14 97.79) (xy 123.19 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b845d46-5c5a-44d0-8b26-74032f5fb985")
+	)
+	(wire
+		(pts
+			(xy 104.14 105.41) (xy 133.35 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "929519d4-9c78-4021-b0a2-b6877d511412")
+	)
+	(wire
+		(pts
+			(xy 104.14 102.87) (xy 129.54 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "937da87f-e20b-4670-9c4a-2fad2d0f6ad1")
+	)
+	(wire
+		(pts
+			(xy 125.73 78.74) (xy 154.94 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "955a5e60-02ec-4465-8767-65eeafc724db")
+	)
+	(wire
+		(pts
+			(xy 104.14 64.77) (xy 147.32 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa4f0540-7434-413a-8eb7-d1d18497427f")
+	)
+	(wire
+		(pts
+			(xy 133.35 105.41) (xy 133.35 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b12ef66d-fed5-4df6-85f0-be569af5159c")
+	)
+	(wire
+		(pts
+			(xy 123.19 97.79) (xy 123.19 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7602a21-20ac-4937-a789-dc43bc719c58")
+	)
+	(wire
+		(pts
+			(xy 129.54 81.28) (xy 154.94 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b852794d-db00-4eb4-93ea-468eb11dd6ec")
+	)
+	(wire
+		(pts
+			(xy 153.67 115.57) (xy 153.67 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf8a40ad-a302-4682-9af1-2617fbe03225")
+	)
+	(wire
+		(pts
+			(xy 104.14 115.57) (xy 153.67 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd67eb56-1563-4d66-baae-38c5c4191d90")
+	)
+	(sheet
+		(at 73.66 93.98)
+		(size 30.48 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5c02961d-376f-4c07-b402-ea23985c49a7")
+		(property "Sheetname" "Peripherals"
+			(at 73.66 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Peripherals.kicad_sch"
+			(at 73.66 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LED_3" input
+			(at 104.14 102.87 0)
+			(uuid "1c933042-5faa-43a6-bb84-0308938c8c74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_4" input
+			(at 104.14 105.41 0)
+			(uuid "dd748130-f115-4bc5-b063-305ce621bc49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_1" input
+			(at 104.14 97.79 0)
+			(uuid "0bb1581b-8f2d-485e-8ac4-c3df926d1402")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_2" input
+			(at 104.14 100.33 0)
+			(uuid "93c56e0f-d8e6-4613-abaf-da630460f746")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BUT_1" output
+			(at 104.14 115.57 0)
+			(uuid "d12f7225-b2c9-43b7-8cd4-ace63aa4f0f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MCU_IO[0..27]" bidirectional
+			(at 104.14 110.49 0)
+			(uuid "0f0fb204-f534-4cee-af12-d4a55bf355b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "my-first-pcb"
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 71.12)
+		(size 30.48 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7a164ee0-935b-405e-98b7-0775b3d822c9")
+		(property "Sheetname" "MCU"
+			(at 154.94 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 154.94 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LED_2" output
+			(at 154.94 78.74 180)
+			(uuid "852ad406-262d-4014-8173-615eed638930")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_1" output
+			(at 154.94 76.2 180)
+			(uuid "f50b447c-c5c0-4dbb-ad96-6849a2a423af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MCU_IO[0..27]" bidirectional
+			(at 154.94 87.63 180)
+			(uuid "3ecf3835-6e05-42bd-b3da-7c75b3e3c477")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BUT_1" input
+			(at 154.94 92.71 180)
+			(uuid "485b4f8d-47a4-4b0d-9757-847203f2c0cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_4" output
+			(at 154.94 83.82 180)
+			(uuid "43eb7a20-0ac6-494b-a3f3-5fad95afe59f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "POWER_GOOD" input
+			(at 154.94 73.66 180)
+			(uuid "f327031d-3e93-4e48-9e62-2becf4eb6c06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_3" output
+			(at 154.94 81.28 180)
+			(uuid "b974e47e-b89e-41c9-925d-3078481bc829")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "my-first-pcb"
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 73.66 60.96)
+		(size 30.48 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9994ffb0-03b6-426a-b064-03de71499840")
+		(property "Sheetname" "Power"
+			(at 73.66 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 73.66 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "POWER_GOOD" output
+			(at 104.14 64.77 0)
+			(uuid "b90a3a7b-9295-41a4-b180-c8ba72222ac9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "my-first-pcb"
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
