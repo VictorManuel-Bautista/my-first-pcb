@@ -2056,6 +2056,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 123.19) (xy 213.36 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22c4e9bb-d152-4ed6-8f7f-35410b0e4446")
+	)
+	(wire
+		(pts
 			(xy 92.71 138.43) (xy 127 138.43)
 		)
 		(stroke
@@ -2073,6 +2083,16 @@
 			(type default)
 		)
 		(uuid "28efd55e-b71c-410a-8ee4-84e298d9188e")
+	)
+	(wire
+		(pts
+			(xy 220.98 123.19) (xy 229.87 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "294a1531-5324-4c4e-8297-361525d3e185")
 	)
 	(wire
 		(pts
@@ -2283,6 +2303,16 @@
 			(type default)
 		)
 		(uuid "7a72bfd0-14e3-428e-a542-388ad42ff8f7")
+	)
+	(wire
+		(pts
+			(xy 237.49 123.19) (xy 250.19 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c72ad26-d110-4a14-af5a-f5b7119ab3a9")
 	)
 	(bus
 		(pts
@@ -3138,7 +3168,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "LED BLUE"
 			(at 218.7575 52.07 0)
 			(effects
 				(font
@@ -3182,6 +3212,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2288"
+			(at 217.17 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0265b953-4328-4400-bb8f-9efb878cca3c")
 		)
@@ -3192,6 +3231,98 @@
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "D?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 217.17 123.19 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09249c5d-49d0-4f6c-8a5f-e398746b2a8d")
+		(property "Reference" "D5"
+			(at 218.7575 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED RED"
+			(at 218.7575 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 217.17 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 217.17 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 217.17 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2286"
+			(at 217.17 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c1d528e2-d2d7-4e28-a7dc-7a35e0050cb4")
+		)
+		(pin "1"
+			(uuid "01ebfb4b-3fab-407d-b822-c660ffb28ba3")
+		)
+		(instances
+			(project "my-first-pcb"
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -3206,7 +3337,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "09249c5d-49d0-4f6c-8a5f-e398746b2a8d")
+		(uuid "09249c5d-49d0-4f6c-8a5f-e398746b2a8e")
 		(property "Reference" "D4"
 			(at 220.0275 83.82 0)
 			(effects
@@ -3215,7 +3346,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "LED GREEN"
 			(at 220.0275 86.36 0)
 			(effects
 				(font
@@ -3259,16 +3390,31 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2289"
+			(at 218.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "c1d528e2-d2d7-4e28-a7dc-7a35e0050cb4")
+			(uuid "c1d528e2-d2d7-4e28-a7dc-7a35e0050cb5")
 		)
 		(pin "1"
-			(uuid "01ebfb4b-3fab-407d-b822-c660ffb28ba3")
+			(uuid "01ebfb4b-3fab-407d-b822-c660ffb28ba4")
 		)
 		(instances
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -3338,6 +3484,12 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3404,6 +3556,12 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3425,7 +3583,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "10k"
 			(at 76.2 62.2299 0)
 			(effects
 				(font
@@ -3434,7 +3592,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 71.882 60.96 90)
 			(effects
 				(font
@@ -3461,6 +3619,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 73.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "29474c59-264c-4906-bf74-1eda55150f0e")
 		)
@@ -3471,6 +3638,12 @@
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -3486,7 +3659,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "262d97f5-3b26-4864-8c5b-a2a6e676323e")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR010"
 			(at 251.46 81.28 0)
 			(effects
 				(font
@@ -3536,7 +3709,13 @@
 		(instances
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
-					(reference "#PWR08")
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -3552,7 +3731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43c548c0-418f-4a0c-8bdf-21f0ca7034af")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR011"
 			(at 251.46 97.79 0)
 			(effects
 				(font
@@ -3602,7 +3781,13 @@
 		(instances
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
-					(reference "#PWR09")
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -3613,7 +3798,7 @@
 		(at 132.08 143.51 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3718,6 +3903,89 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "J?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 233.68 123.19 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c08f977-830e-439f-9d6d-d5ba009623ac")
+		(property "Reference" "R5"
+			(at 233.68 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 233.68 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 233.68 124.968 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 233.68 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 233.68 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "48314f7a-69b7-4f67-8d8a-1d26e5c48b56")
+		)
+		(pin "1"
+			(uuid "3e1d3f7b-7989-4ade-b2bc-9966a3a2406c")
+		)
+		(instances
+			(project "my-first-pcb"
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
+					(reference "R5")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3729,8 +3997,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5c08f977-830e-439f-9d6d-d5ba009623ac")
-		(property "Reference" "R5"
+		(uuid "5c08f977-830e-439f-9d6d-d5ba009623ad")
+		(property "Reference" "R6"
 			(at 234.95 85.09 90)
 			(effects
 				(font
@@ -3746,7 +4014,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 234.95 93.218 90)
 			(effects
 				(font
@@ -3773,16 +4041,97 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 234.95 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "48314f7a-69b7-4f67-8d8a-1d26e5c48b56")
+			(uuid "48314f7a-69b7-4f67-8d8a-1d26e5c48b57")
 		)
 		(pin "1"
-			(uuid "3e1d3f7b-7989-4ade-b2bc-9966a3a2406c")
+			(uuid "3e1d3f7b-7989-4ade-b2bc-9966a3a2406d")
 		)
 		(instances
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
-					(reference "R5")
+					(reference "R6")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 204.47 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c1d39f0-2a4c-4eb0-b126-971a0b1123e7")
+		(property "Reference" "#PWR07"
+			(at 204.47 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 204.47 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 204.47 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "847539a8-fb82-4423-aa19-c05da7c7f475")
+		)
+		(instances
+			(project ""
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3798,7 +4147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b3b52dd-5a8f-4d66-ba3c-5c916e0383cf")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR09"
 			(at 251.46 63.5 0)
 			(effects
 				(font
@@ -3848,7 +4197,13 @@
 		(instances
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
-					(reference "#PWR07")
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -3880,7 +4235,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 233.68 43.688 90)
 			(effects
 				(font
@@ -3907,6 +4262,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 233.68 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8340a8fd-2f8b-4805-8876-76e1514e4ee2")
 		)
@@ -3917,6 +4281,78 @@
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 250.19 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75e1046b-fe38-4321-a8d5-e9305cc5fb1a")
+		(property "Reference" "#PWR08"
+			(at 250.19 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b8b7fee-4bab-4cb3-88a3-d7fdbfdd650d")
+		)
+		(instances
+			(project "my-first-pcb"
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3975,6 +4411,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C294566"
+			(at 60.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eda6f817-fc65-45df-8621-31f49609b6e6")
 		)
@@ -3985,6 +4430,12 @@
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "SW?")
 					(unit 1)
 				)
 			)
@@ -4008,7 +4459,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "LED YELLOW"
 			(at 218.7575 69.85 0)
 			(effects
 				(font
@@ -4052,6 +4503,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2290"
+			(at 217.17 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "701c8869-8d62-4fa3-92cb-26a5c84a135c")
 		)
@@ -4062,6 +4522,12 @@
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -4131,6 +4597,12 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4151,7 +4623,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "LED RED"
 			(at 218.7575 36.83 0)
 			(effects
 				(font
@@ -4195,6 +4667,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2286"
+			(at 217.17 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a4add86b-3abe-4dba-a3c6-2b37664d097b")
 		)
@@ -4205,6 +4686,12 @@
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -4274,6 +4761,12 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4302,7 +4795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 232.41 58.928 90)
 			(effects
 				(font
@@ -4329,6 +4822,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 232.41 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bd56333d-18c1-44d7-aedb-5a4158b5dc4c")
 		)
@@ -4339,6 +4841,12 @@
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -4408,6 +4916,12 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4420,7 +4934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e10c9fbd-aa91-4524-b0d1-903e4552afc6")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR012"
 			(at 252.73 48.26 0)
 			(effects
 				(font
@@ -4470,7 +4984,13 @@
 		(instances
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/5c02961d-376f-4c07-b402-ea23985c49a7"
-					(reference "#PWR010")
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -4502,7 +5022,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 233.68 76.708 90)
 			(effects
 				(font
@@ -4529,6 +5049,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 233.68 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fc69b30a-9dbd-450d-9b3c-245beaf2347b")
 		)
@@ -4542,6 +5071,12 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4549,7 +5084,7 @@
 		(at 43.18 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4652,6 +5187,12 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4718,6 +5259,18 @@
 					(unit 1)
 				)
 			)
+			(project "Peripherals"
+				(path "/b8e6ffad-3c50-4129-a860-8c011c7ea3f1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

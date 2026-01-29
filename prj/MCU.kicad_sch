@@ -198,7 +198,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Antenna"
+		(symbol "Device:Antenna_Shield"
 			(pin_numbers
 				(hide yes)
 			)
@@ -210,7 +210,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "AE"
-				(at -1.905 1.905 0)
+				(at -1.905 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -218,8 +218,8 @@
 					(justify right)
 				)
 			)
-			(property "Value" "Antenna"
-				(at -1.905 0 0)
+			(property "Value" "Antenna_Shield"
+				(at -1.905 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -228,7 +228,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -237,7 +237,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -245,7 +245,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Antenna"
+			(property "Description" "Antenna with extra pin for shielding"
 				(at 0 0 0)
 				(effects
 					(font
@@ -263,10 +263,22 @@
 					(hide yes)
 				)
 			)
-			(symbol "Antenna_0_1"
+			(symbol "Antenna_Shield_0_1"
+				(arc
+					(start 0 -2.667)
+					(mid -0.8485 -2.1032)
+					(end -0.508 -1.143)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0 -3.81)
+						(xy 0 5.08) (xy 0 -3.81)
 					)
 					(stroke
 						(width 0.254)
@@ -278,10 +290,69 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0 -2.54) (xy -1.27 2.54)
+						(xy 0 -2.54) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 -1.143)
+					(mid 0.8046 -2.0885)
+					(end 0 -2.667)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.905) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.762 -1.905)
+					(radius 0.1778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0 0) (xy -1.27 5.08)
 					)
 					(stroke
 						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -289,7 +360,7 @@
 					)
 				)
 			)
-			(symbol "Antenna_1_1"
+			(symbol "Antenna_Shield_1_1"
 				(pin input line
 					(at 0 -5.08 90)
 					(length 2.54)
@@ -301,6 +372,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -613,6 +702,262 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Crystal_GND24"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 3.175 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_GND24_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27) (xy -2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.556) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_GND24_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2289,7 +2634,7 @@
 		(uuid 1e46ea7f-5fa3-4700-9ee7-3074d33bf158)
 	)
 	(rectangle
-		(start 226.06 129.54)
+		(start 226.06 125.73)
 		(end 267.97 153.67)
 		(stroke
 			(width 0)
@@ -2373,7 +2718,7 @@
 	)
 	(text "Antenna."
 		(exclude_from_sim no)
-		(at 247.65 127 0)
+		(at 247.65 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2395,7 +2740,7 @@
 	)
 	(text "Inputs and Outputs"
 		(exclude_from_sim no)
-		(at 132.08 147.32 0)
+		(at 130.81 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2777,6 +3122,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 100.33) (xy 256.54 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ad1ec3b-653a-440f-b84c-30958823532e")
+	)
+	(wire
+		(pts
 			(xy 195.58 102.87) (xy 207.01 102.87)
 		)
 		(stroke
@@ -2854,6 +3209,16 @@
 			(type default)
 		)
 		(uuid "13296ddb-e68b-44c9-95eb-4ea6803d450a")
+	)
+	(wire
+		(pts
+			(xy 248.92 137.16) (xy 248.92 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "161ecc1b-e963-4375-a983-9ce2329d6cc2")
 	)
 	(wire
 		(pts
@@ -3367,16 +3732,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 137.16) (xy 190.5 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86c951d1-2e04-4a9c-bbfc-b6e9157f15be")
-	)
-	(wire
-		(pts
 			(xy 134.62 35.56) (xy 142.24 35.56)
 		)
 		(stroke
@@ -3485,6 +3840,16 @@
 		)
 		(uuid "9bda928f-61b1-47c5-9ec5-386fb84a11c7")
 	)
+	(wire
+		(pts
+			(xy 180.34 137.16) (xy 190.5 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c4aa486-ba75-45e6-8953-d2ea28e70133")
+	)
 	(bus
 		(pts
 			(xy 93.98 115.57) (xy 93.98 118.11)
@@ -3584,6 +3949,16 @@
 			(type default)
 		)
 		(uuid "b9af1cfb-d760-4f1c-927d-ce195a684621")
+	)
+	(wire
+		(pts
+			(xy 248.92 85.09) (xy 256.54 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be3a6490-4c58-4e7c-bc7a-061b7e0d825e")
 	)
 	(bus
 		(pts
@@ -3844,6 +4219,16 @@
 			(type default)
 		)
 		(uuid "ed9163c8-e474-4752-adfd-858ce7d7ce51")
+	)
+	(wire
+		(pts
+			(xy 256.54 90.17) (xy 256.54 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef60d587-c616-45f7-8ce9-5d2bf3c955c7")
 	)
 	(wire
 		(pts
@@ -4286,7 +4671,7 @@
 		(uuid "709e0cee-f2c3-4327-acab-0853bf306f4b")
 	)
 	(label "ANT"
-		(at 185.42 137.16 0)
+		(at 180.34 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4404,6 +4789,28 @@
 			(justify left bottom)
 		)
 		(uuid "adfa9437-418a-49c3-8952-f1f584c988d0")
+	)
+	(label "RF"
+		(at 219.71 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbf459aa-488a-4511-949c-2b1562606532")
+		(property "Netclass" "SE_50"
+			(at 218.44 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "MCU_IO16"
 		(at 80.01 107.95 0)
@@ -4691,7 +5098,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12p"
+		(property "Value" "10p"
 			(at 248.92 100.3299 0)
 			(effects
 				(font
@@ -4700,7 +5107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 246.0752 102.87 0)
 			(effects
 				(font
@@ -4719,6 +5126,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 245.11 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1634"
 			(at 245.11 99.06 0)
 			(effects
 				(font
@@ -4758,7 +5174,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "043b331f-ccff-4612-9439-609d24d89c9a")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 184.15 53.34 0)
 			(effects
 				(font
@@ -4814,7 +5230,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR026")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -4917,7 +5333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24639d30-201e-45ab-a230-f0789de03aba")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR029"
 			(at 190.5 153.67 0)
 			(effects
 				(font
@@ -4973,81 +5389,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Crystal")
-		(at 256.54 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26120233-dba1-424d-8e19-73352866481a")
-		(property "Reference" "Y2"
-			(at 256.54 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "32MHz"
-			(at 256.54 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm"
-			(at 256.54 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two pin crystal"
-			(at 256.54 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f99b93b8-d23d-4eee-8cfe-42f91712d8a8")
-		)
-		(pin "2"
-			(uuid "bf5cf1eb-fcb5-490c-84f9-82f015831048")
-		)
-		(instances
-			(project "MCU"
-				(path "/6b2edc6f-ce23-4068-b295-0d04bfc3f108"
-					(reference "Y2")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "Y2")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -5081,7 +5423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 157.1752 44.45 0)
 			(effects
 				(font
@@ -5100,6 +5442,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 156.21 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14858"
 			(at 156.21 40.64 0)
 			(effects
 				(font
@@ -5157,7 +5508,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 134.62 53.34 0)
 			(effects
 				(font
@@ -5176,6 +5527,15 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 134.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C18221303"
 			(at 134.62 53.34 0)
 			(effects
 				(font
@@ -5224,7 +5584,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12p"
+		(property "Value" "18p"
 			(at 220.98 100.3299 0)
 			(effects
 				(font
@@ -5233,7 +5593,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 218.1352 102.87 0)
 			(effects
 				(font
@@ -5252,6 +5612,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 217.17 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 217.17 99.06 0)
 			(effects
 				(font
@@ -5282,6 +5651,154 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 256.54 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38e259d5-38d8-4eb4-8472-7ae7d7dba079")
+		(property "Reference" "Y2"
+			(at 261.62 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL7EL89CKI-111YLC-32M"
+			(at 271.78 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+			(at 256.54 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589838326468272128"
+			(at 256.54 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 256.54 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2965582"
+			(at 256.54 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39f2c9a5-1d9d-4909-8042-d4b944061ba1")
+		)
+		(pin "2"
+			(uuid "c5b5e82a-212a-4cdb-ba68-beba714f36ad")
+		)
+		(pin "3"
+			(uuid "394d8856-a4f8-4f02-a13b-2aea5a93803f")
+		)
+		(pin "4"
+			(uuid "98eea7ec-43f5-4b0a-99a1-2ea50d1a42e4")
+		)
+		(instances
+			(project ""
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
+					(reference "Y2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 248.92 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a2ec2a5-fa77-475b-be79-54cee35209d6")
+		(property "Reference" "#PWR034"
+			(at 248.92 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 248.92 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 248.92 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2420415c-d23e-4028-af59-53c86686c486")
+		)
+		(instances
+			(project ""
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 266.7 99.06 0)
 		(unit 1)
@@ -5300,7 +5817,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12p"
+		(property "Value" "10p"
 			(at 270.51 100.3299 0)
 			(effects
 				(font
@@ -5309,7 +5826,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 267.6652 102.87 0)
 			(effects
 				(font
@@ -5328,6 +5845,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 266.7 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1634"
 			(at 266.7 99.06 0)
 			(effects
 				(font
@@ -5385,7 +5911,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 185.1152 44.45 0)
 			(effects
 				(font
@@ -5404,6 +5930,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 184.15 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 184.15 40.64 0)
 			(effects
 				(font
@@ -5443,7 +5978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4431dc57-d896-422c-980c-eca24fc7d2b2")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR024"
 			(at 104.14 38.1 0)
 			(effects
 				(font
@@ -5499,7 +6034,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR022")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5560,6 +6095,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C40459"
+			(at 190.5 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9f2fa5b4-4049-491b-9f21-796880f6e5eb")
 		)
@@ -5591,7 +6135,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53789e5a-1ff4-4b07-94f3-641435a7eff4")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR033"
 			(at 247.65 36.83 0)
 			(effects
 				(font
@@ -5647,7 +6191,77 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR031")
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Antenna_Shield")
+		(at 246.38 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56cb59fb-907e-4942-a03d-1b50257d4a4b")
+		(property "Reference" "AE1"
+			(at 250.19 130.1749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Antenna_Shield"
+			(at 250.19 132.7149 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RF_Antenna:Texas_SWRA117D_2.4GHz_Left"
+			(at 246.38 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Antenna with extra pin for shielding"
+			(at 246.38 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63ba492f-2032-4bd3-baa9-76a37019487f")
+		)
+		(pin "2"
+			(uuid "0454746c-b19a-4530-a8ee-bafcd74d5917")
+		)
+		(instances
+			(project ""
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
+					(reference "AE1")
 					(unit 1)
 				)
 			)
@@ -5672,7 +6286,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12p"
+		(property "Value" "18p"
 			(at 199.39 100.3299 0)
 			(effects
 				(font
@@ -5681,7 +6295,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 196.5452 102.87 0)
 			(effects
 				(font
@@ -5700,6 +6314,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 195.58 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1647"
 			(at 195.58 99.06 0)
 			(effects
 				(font
@@ -5739,7 +6362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f0862d1-0113-4fcd-ba82-0f160afe264d")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR023"
 			(at 55.88 158.75 0)
 			(effects
 				(font
@@ -5795,7 +6418,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR021")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5856,6 +6479,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1592"
+			(at 142.24 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4aad0bcd-84e0-4864-9220-05c791d92c83")
 		)
@@ -5905,7 +6537,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 105.1052 44.45 0)
 			(effects
 				(font
@@ -5924,6 +6556,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 104.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 104.14 40.64 0)
 			(effects
 				(font
@@ -5971,7 +6612,7 @@
 				)
 			)
 		)
-		(property "Value" "32.768kHz"
+		(property "Value" "Q13FC13500004"
 			(at 207.01 90.17 0)
 			(effects
 				(font
@@ -5988,7 +6629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8629475189295955968"
 			(at 207.01 95.25 0)
 			(effects
 				(font
@@ -5998,6 +6639,15 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
+			(at 207.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C32346"
 			(at 207.01 95.25 0)
 			(effects
 				(font
@@ -6037,7 +6687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b640693-a602-47fe-872b-215fbe301fce")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR027"
 			(at 162.56 53.34 0)
 			(effects
 				(font
@@ -6093,7 +6743,7 @@
 			)
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR025")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -6109,7 +6759,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "958cbe46-2e52-47e7-9469-829c09c51bc4")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR036"
 			(at 256.54 109.22 0)
 			(effects
 				(font
@@ -6165,7 +6815,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR032")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -6224,6 +6874,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C294566"
+			(at 264.16 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b8d78955-cdc0-48ea-bf74-59ecd11122d2")
 		)
@@ -6273,7 +6932,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 134.62 41.91 0)
 			(effects
 				(font
@@ -6292,6 +6951,15 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 134.62 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C304267"
 			(at 134.62 41.91 0)
 			(effects
 				(font
@@ -6368,6 +7036,15 @@
 			)
 		)
 		(property "Description" "Multiprotocol BLE/2.4GHz Cortex-M4 SoC, QFN-48"
+			(at 55.88 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C77540"
 			(at 55.88 97.79 0)
 			(effects
 				(font
@@ -6548,7 +7225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2f94783-aa93-42ee-be74-98b40ed450dd")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR037"
 			(at 270.51 49.53 0)
 			(effects
 				(font
@@ -6604,7 +7281,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR033")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -6620,7 +7297,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a42dfe0b-f237-4e7d-9e50-c29c128f7bb5")
-		(property "Reference" "R11"
+		(property "Reference" "R12"
 			(at 250.19 35.5599 0)
 			(effects
 				(font
@@ -6638,7 +7315,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 245.872 36.83 90)
 			(effects
 				(font
@@ -6665,6 +7342,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 247.65 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b73a3170-df0b-4c13-b9d0-4164c8cc731c")
 		)
@@ -6680,7 +7366,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "R11")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6696,7 +7382,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5bce71a-86d6-48bd-bb83-6baa2d3ab162")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR030"
 			(at 207.01 109.22 0)
 			(effects
 				(font
@@ -6752,7 +7438,7 @@
 			)
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR028")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6768,7 +7454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abb79a54-4a82-4763-a2e3-cae50898881f")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR022"
 			(at 55.88 54.61 0)
 			(effects
 				(font
@@ -6824,7 +7510,79 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR020")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 248.92 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0da7029-2b79-41b4-8a68-b9500e2d6340")
+		(property "Reference" "#PWR035"
+			(at 248.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 248.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 248.92 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ad84a35-d229-453a-996c-f98d6039dfcf")
+		)
+		(instances
+			(project "MCU"
+				(path "/6b2edc6f-ce23-4068-b295-0d04bfc3f108"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+			(project "my-first-pcb"
+				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -6858,7 +7616,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 93.6752 44.45 0)
 			(effects
 				(font
@@ -6877,6 +7635,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 92.71 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 92.71 40.64 0)
 			(effects
 				(font
@@ -6934,7 +7701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 169.8752 44.45 0)
 			(effects
 				(font
@@ -6992,7 +7759,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1da6a1c-66dd-4ce5-9b4d-1b0ff67d4aa7")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR026"
 			(at 142.24 63.5 0)
 			(effects
 				(font
@@ -7048,80 +7815,7 @@
 			)
 			(project "my-first-pcb"
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Antenna")
-		(at 246.38 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c40e806c-0646-488f-9927-22b5522bee6a")
-		(property "Reference" "AE1"
-			(at 248.92 131.4449 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Antenna"
-			(at 248.92 133.9849 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RF_Antenna:Texas_SWRA117D_2.4GHz_Left"
-			(at 246.38 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Antenna"
-			(at 246.38 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "91be6b85-846d-49e9-b701-c1cc70759848")
-		)
-		(instances
-			(project "MCU"
-				(path "/6b2edc6f-ce23-4068-b295-0d04bfc3f108"
-					(reference "AE1")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "AE1")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -7180,6 +7874,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14033"
+			(at 199.39 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "55e2a163-1c94-4962-9303-01d953207a68")
 		)
@@ -7211,7 +7914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e38e2a52-bca6-4fbc-b442-200626d98c8e")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR025"
 			(at 104.14 53.34 0)
 			(effects
 				(font
@@ -7267,7 +7970,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR023")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -7283,7 +7986,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7784bea-4993-43ac-9986-beac2e17613f")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR031"
 			(at 234.95 39.37 0)
 			(effects
 				(font
@@ -7339,7 +8042,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR029")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -7355,7 +8058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebfbe240-a960-47dd-a435-f7c6eb78aff8")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR032"
 			(at 234.95 64.77 0)
 			(effects
 				(font
@@ -7411,7 +8114,7 @@
 			)
 			(project ""
 				(path "/85026044-e848-43ba-9b62-4d5d8c169d04/7a164ee0-935b-405e-98b7-0775b3d822c9"
-					(reference "#PWR030")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -7464,6 +8167,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 118.11 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1705"
 			(at 118.11 40.64 0)
 			(effects
 				(font
